@@ -36,3 +36,25 @@ Host localhost
 If connection fails with a host key error, run:
 
 `ssh-keygen -R "[localhost]:2222"`
+
+# Alias for libraries
+# Bash Aliases Setup
+
+To use the provided bash aliases on a Linux machine:
+
+1. Copy the file to your home directory:
+  ```
+  cp /path/to/.aliases ~/.aliases
+  ```
+
+2. Add the following lines to your `~/.bashrc` file:
+  ```bash
+  if [ -f ~/.aliases ]; then
+     . ~/.aliases
+  fi
+  ```
+
+On if on VSCode, you can open the file GUI with `code ~/.bashrc`
+
+This will load your custom aliases every time you start a new bash session.
+
